@@ -1,0 +1,64 @@
+
+#msgBoxContainer {
+	background-color: transparent;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 10000;
+}
+
+#alertBox {
+	position: relative;
+	width: 375px;
+	left: 527.5px;
+	min-height: 100px;
+	margin-top: 153px;
+	border: 2px solid #000;
+	background-color: #F2F5F6;
+	background-repeat: no-repeat;
+	background-position: 20px 30px;
+}
+
+#msgBoxContainer > #alertBox {
+	position: fixed;
+}
+
+#alertBox h1 {
+	margin: 0;
+	font: bold 1em verdana,arial;
+	background-color: #FF0000;
+	color: #FFF;
+	border-bottom: 1px solid #000;
+	padding: 2px 0 2px 5px;
+}
+
+#alertBox p {
+	/*font: 0.7em verdana,arial;*/
+	height: 40px;
+  padding-left: 5px;
+  text-align: center;
+  width: 350px;
+}
+
+#alertBox #confirmButton {
+	display: block;
+	position: relative;
+	margin: 20px 135px;
+	padding: 3px;
+	border: 1px solid #000;
+	width: 70px;
+	font: 1.2em verdana,arial;
+	/*text-transform: uppercase;*/
+	text-align: center;
+	color: #FFF;
+	background-color: #1E90FF;
+	text-decoration: none;
+	-moz-box-shadow: 3px 3px 3px #000000;
+  -webkit-box-shadow: 3px 3px 3px #000000;
+  box-shadow: 3px 3px 3px #000000;
+  filter: progid: DXImageTransform.Microsoft.Shadow(color='#000000', Direction=145, Strength=3); /* a hack for the box shadow in Internet Explorer*/
+}
+
+

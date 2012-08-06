@@ -1,0 +1,27 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^index.php                    app/views/index.php   [PT]
+
+RewriteRule public/images/(.+)        public/images/$1
+RewriteRule public/javascripts/(.+)   public/javascripts/$1
+RewriteRule public/stylesheets/(.+)   public/stylesheets/$1
+
+# restrict access to intermediary directories
+RewriteRule ^app/$ -              [F]
+RewriteRule ^app/views/$ -        [F]
+RewriteRule ^app/models/$ -       [F]
+RewriteRule ^app/controllers/$ -  [F]
+
+# restrict access system directories
+RewriteRule ^config/$ -             [F]
+RewriteRule ^log/$ -                [F]
+RewriteRule ^public/$ -             [F]
+RewriteRule ^public/images/$ -      [F]
+RewriteRule ^public/javascripts/$ - [F]
+RewriteRule ^public/stylesheets/$ - [F]
+
+
+
+
+

@@ -1,0 +1,23 @@
+env: development
+
+production:
+  adapter: mysql
+  database: db_name
+  username: db_username
+  password: db_password
+  host: localhost
+
+development:
+  adapter: mysql
+  database: db_name
+  username: db_username
+  password: db_password
+  host: localhost
+
+test:
+  adapter: mysql
+  database: db_name
+  username: db_username
+  password: db_password
+  host: localhost
+
